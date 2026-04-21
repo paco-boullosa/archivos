@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #1d1d1f;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .slide {
+            width: 100%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+            page-break-after: always;
+            box-sizing: border-box;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            color: #86868b;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .grid {
+            display: table;
+            width: 100%;
+            border-spacing: 20px 0;
+            margin: 30px -20px;
+        }
+
+        .col {
+            display: table-cell;
+            width: 50%;
+            background: #f5f5f7;
+            padding: 30px;
+            border-radius: 20px;
+            vertical-align: top;
+        }
+
+        .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .pros-label { color: #008060; }
+        .cons-label { color: #ff3b30; }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .time-footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e5e7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .time-value {
+            font-size: 21px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .badge {
+            background: #0071e3;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: PORTADA -->
+    <div class="slide" style="text-align: center; display: flex; flex-direction: column; justify-content: center; height: 600px;">
+        <div class="icon"><img width="130" src="https://jiqjtfuhlfra07y3-76888834331.shopifypreview.com/cdn/shop/files/ep_logo_2026.png?v=1769622929&width=280"></div>
+        <h1 class="hero-title">Piloto Omnicanal</h1>
+        <p class="hero-subtitle">Test de venta online con stock de POS</p>
+        <p style="color: #86868b; font-size: 14px; margin-top: 100px;">Abril 2026</p>
+    </div>
+
+    <!-- SLIDE 2: OPCION 1 -->
+    <div class="slide">
+        <span class="badge">Nativo</span>
+        <h2>1. Sincronización Sandbox POS</h2>
+        <p style="color: #86868b;">Mantener pedidos, facturacion y stock Shopify + BC</p>
+        
+        <div class="grid">
+            <div class="col">
+                <span class="label pros-label">Ventajas</span>
+                <ul>
+                    <li>Sincronización automática real-time.</li>
+                    <li>Gestión centralizada de pedidos.</li>
+                    <li>Sin costes mensuales de apps.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="label cons-label">Inconvenientes</span>
+                <ul>
+                    <li>Requiere disciplina de inventario.</li>
+                    <li>Riesgo de falta de stock físico.</li>
+                    <li>Configuración técnica inicial.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="time-footer">
+            <span>Esfuerzo de implementación (incluye pruebas)</span>
+            <span class="time-value">2 - 4 Días</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: OPCION 2 -->
+    <div class="slide">
+        <span class="badge">Agilidad</span>
+        <h2>2. Método Buy Button</h2>
+        <p style="color: #86868b;">La implantación más rápida.</p>
+        
+        <div class="grid">
+            <div class="col">
+                <span class="label pros-label">Ventajas</span>
+                <ul>
+                    <li>Checkout directo en un clic.</li>
+                    <li>Versatilidad fuera de la tienda online.</li>
+                    <li>Instalación instantánea.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="label cons-label">Inconvenientes</span>
+                <ul>
+                    <li>Necesario validar integración BC.</li>
+                    <li>Proceso manual no escalable.</li>
+                    <li>Implica crear producto ficticio.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="time-footer">
+            <span>Tiempo implantación</span>
+            <span class="time-value">Rápido + t por pedido</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: OPCION 3 -->
+    <div class="slide">
+        <span class="badge">Control</span>
+        <h2>3. Shopify Draft Orders</h2>
+        <p style="color: #86868b;">Venta personalizada + integracion con pedidos.</p>
+        
+        <div class="grid">
+            <div class="col">
+                <span class="label pros-label">Ventajas</span>
+                <ul>
+                    <li>Reserva de stock para el cliente.</li>
+                    <li>Precios y descuentos manuales.</li>
+                    <li>Integración con facturación BC.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="label cons-label">Inconvenientes</span>
+                <ul>
+                    <li>Proceso manual y no escalable.</li>
+                    <li>Dependencia de interacción directa.</li>
+                    <li>Necesario validar cómo entra en BC.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="time-footer">
+            <span>Tiempo implementación</span>
+            <span class="time-value">Rápido + t por Pedido</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: OPCION 4 -->
+    <div class="slide">
+        <span class="badge" style="background: #635bff;">Independencia</span>
+        <h2>4. Stripe Payment Links</h2>
+        <p style="color: #86868b;">Pagos puros. Sin relación con ecosistema actual.</p>
+        
+        <div class="grid">
+            <div class="col">
+                <span class="label pros-label">Ventajas</span>
+                <ul>
+                    <li>Activación en muy poco tiempo.</li>
+                    <li>Cero impacto en el stock online.</li>
+                    <li>Fiabilidad de pasarela.</li>
+                    <li>No dependencia de otros procesos.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <span class="label cons-label">Inconvenientes</span>
+                <ul>
+                    <li>Desconexión contable total.</li>
+                    <li>No hay registro en Shopify.</li>
+                    <li>Requiere conciliación manual.</li>
+                    <li>Proceso manual y no escalable.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="time-footer">
+            <span>Tiempo implementación</span>
+            <span class="time-value">Muy rápido + t por Pedido</span>
+        </div>
+    </div>
+
+</body>
+</html>
